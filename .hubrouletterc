@@ -33,6 +33,13 @@
       }
     ],
     "pull_request:assigned": [
+      {
+        "type":"assign",
+        "config": {
+          "strategy": "required",
+          "assignees": ["temeroustitan"]
+        }
+      }
     ]
   }
 }
