@@ -12,7 +12,7 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} to: {{.Event.Assignees}}"
+          "template": "Hot off the press -- assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} to: {{.Event.Assignees}}"
         }
       }
     ],
