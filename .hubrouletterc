@@ -12,7 +12,7 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}} to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} to: {{.Event.Assignees}}"
         }
       }
     ],
@@ -28,7 +28,7 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "#{{.Event.PullRequestNumber}} <reopened> + assigned: {{.Event.Assignees}}"
+          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} (reopened) to: {{.Event.Assignees}}"
         }
       }
     ],
