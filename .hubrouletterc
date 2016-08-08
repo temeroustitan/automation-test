@@ -40,6 +40,15 @@
           "assignees": ["temeroustitan"]
         }
       }
+    ],
+    "pull_request:unassigned": [
+      {
+        "type":"assign",
+        "config": {
+          "strategy": "required",
+          "assignees": ["temeroustitan"]
+        }
+      }
     ]
   }
 }
