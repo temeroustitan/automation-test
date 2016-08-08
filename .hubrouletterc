@@ -28,7 +28,7 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "Assigned to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+          "template": "#{{.Event.PullRequestNumber}} <reopened> + assigned: {{.Event.Assignees}}"
         }
       }
     ],
