@@ -12,7 +12,7 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}} to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} to: {{.Event.Assignees}}"
         }
       }
     ],
@@ -28,11 +28,27 @@
         "type": "slack_notification",
         "config": {
           "event": "assign_assigned",
-          "template": "Assigned to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+          "template": "Assigned {{.Repository.Owner}}/{{.Repository.Name}}#{{.Event.PullRequestNumber}} (reopened) to: {{.Event.Assignees}}"
         }
       }
     ],
     "pull_request:assigned": [
+      {
+        "type":"assign",
+        "config": {
+          "strategy": "required",
+          "assignees": ["temeroustitan"]
+        }
+      }
+    ],
+    "pull_request:unassigned": [
+      {
+        "type":"assign",
+        "config": {
+          "strategy": "required",
+          "assignees": ["temeroustitan"]
+        }
+      }
     ]
   }
 }
