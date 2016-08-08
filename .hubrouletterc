@@ -16,6 +16,22 @@
         }
       }
     ],
+    "pull_request:reopened": [
+      {
+        "type":"assign",
+        "config": {
+          "strategy": "required",
+          "assignees": ["temeroustitan"]
+        }
+      },
+      {
+        "type": "slack_notification",
+        "config": {
+          "event": "assign_assigned",
+          "template": "Assigned to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+        }
+      }
+    ],
     "pull_request:assigned": [
     ]
   }
