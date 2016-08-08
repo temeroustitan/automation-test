@@ -7,6 +7,13 @@
           "strategy": "required",
           "assignees": ["temeroustitan"]
         }
+      },
+      {
+        "type": "slack_notification",
+        "config": {
+          "event": "assign_assigned",
+          "template": "Assigned to #{{.Event.PullRequestNumber}}: {{.Event.Assignees}}"
+        }
       }
     ]
   }
