@@ -1,11 +1,11 @@
 {
-  "policy": [
-    "pull_request:opened": {
+  "policy": {
+    "pull_request:opened": [
       "type":"assign",
       "config": {
         "strategy": "required",
         "assignees": ["temeroustitan"]
       }
-    }
-  ]
+    ]
+  }
 }
