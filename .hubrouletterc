@@ -1,5 +1,6 @@
 {
   "policy": {
+    "foobar":[],
     "pull_request:opened": [
       {
         "type":"assign",
